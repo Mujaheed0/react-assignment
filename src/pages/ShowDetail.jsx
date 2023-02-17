@@ -32,8 +32,8 @@ function ShowDetail() {
         showForm ? "overflow-hidden" : ""
       }`}
     >
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-6">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 ">
+        <div className="flex justify-between items-center py-6 sticky">
           <Link
             to="/"
             className="text-lg font-medium text-gray-600 hover:text-gray-900"
@@ -66,7 +66,7 @@ function ShowDetail() {
             </div>
 
             {/* summary section  */}
-            <div className="col-span-2 space-y-4">
+            <div className="lg:col-span-2 space-y-4">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
                 {show.name}
               </h1>
@@ -120,7 +120,7 @@ function ShowDetail() {
                   {show.summary.replace(/(<([^>]+)>)/gi, "")}
                 </p>
               </div>
-              <div className="flex  flex-col md:flex-row col-span-2 md:col-span-1">
+              <div className="flex  flex-col md:flex-row col-span-2  md:col-span-1">
                 {show.network && (
                   <div className=" pb-10">
                     <h1 className=" font-bold text-xl mb-1">

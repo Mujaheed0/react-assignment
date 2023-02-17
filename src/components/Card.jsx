@@ -19,7 +19,9 @@ const Card = ({ data }) => {
         />
         <div className="absolute bottom-0 w-full bg-black bg-opacity-50 px-4 py-2">
           <h2 className="text-white text-lg font-bold">{data.name}</h2>
-          <p className="text-gray-300 text-sm">{data.genres.join(", ")}</p>
+          <p className="text-gray-300 hidden sm:block text-sm">
+            {data.genres.join(", ")}
+          </p>
         </div>
       </div>
       <div className="p-4">
@@ -30,7 +32,9 @@ const Card = ({ data }) => {
             </span>
             <span className="text-gray-500 text-sm">Rating</span>
           </div>
-          <span className="text-gray-500 text-sm">{data.status}</span>
+          <span className="text-gray-500 hidden sm:inline text-sm">
+            {data.status}
+          </span>
         </div>
         <div className="flex justify-end">
           <span className="text-gray-500 text-sm">More Info</span>
