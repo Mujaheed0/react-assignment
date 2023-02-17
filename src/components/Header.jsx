@@ -6,7 +6,7 @@ function Header() {
   const [localData] = useLocalStorage("localData", []);
   const navigate = useNavigate();
   return (
-    <header className="max_width px-4 py-10 flex">
+    <header className="max_width px-10 py-10 flex">
       <h1 className="text-5xl font-bold text-center "> Shows</h1>
       <div className="flex justify-end flex-grow">
         {localData.length ? (

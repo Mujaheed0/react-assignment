@@ -10,6 +10,7 @@ export default function UserForm({ show, setShowForm }) {
     showName: show.name,
     imageUrl: show.image.original,
     selectedTime: show.schedule.time,
+    phone: "",
     showId: show.id,
   });
   const handleFormSubmit = (e) => {
