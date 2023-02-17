@@ -2,9 +2,19 @@ import React from "react";
 
 function Network({ network }) {
   return (
-    <div className="">
-      <div className="">Network : {network.name}</div>
-      <div>Network Country : {network.country.name}</div>
+    <>
+      <p className="text-lg">
+        Network :
+        <span className="font-semibold text-gray-700">
+          {" " + network.name}
+        </span>
+      </p>
+      <p className="text-lg">
+        Network Origin Country :{" "}
+        <span className="font-semibold text-gray-700">
+          {" " + network.country.name}
+        </span>
+      </p>
       <a
         target="_blank"
         className="text-xl text-blue-400 underline  "
@@ -13,7 +23,7 @@ function Network({ network }) {
       >
         {` Watch More Shows From ${network.name}`}
       </a>
-    </div>
+    </>
   );
 }
 

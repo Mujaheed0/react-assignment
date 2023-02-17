@@ -122,14 +122,14 @@ function ShowDetail() {
               </div>
               <div className="flex  flex-col md:flex-row col-span-2 md:col-span-1">
                 {show.network && (
-                  <div className="  pb-10">
+                  <div className=" pb-10">
                     <h1 className=" font-bold text-xl mb-1">
                       Network Details:
                     </h1>
                     <Network network={show.network}></Network>
                   </div>
                 )}
-                <div className="text-para_text px-2 pb-10">
+                <div className=" px-2 pb-10">
                   <h1 className=" font-bold text-xl mb-1">External Links:</h1>
                   <ExternalLinks externals={show.externals}></ExternalLinks>
                 </div>
